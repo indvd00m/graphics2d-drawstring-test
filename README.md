@@ -1,4 +1,4 @@
-# Graphics2D.drawString-test
+# Graphics2D.drawString Test
 
 Test for check pixel-by-pixel identical text rendering with `Graphics2D.drawString` on all java platforms with same font.
 
@@ -67,6 +67,6 @@ Contributions are welcome, but there are no guarantees that they are accepted as
 
 ## License & Author
 
-Graphics2D.drawString-test is distributed under Apache License 2.0. For license terms, see LICENSE.
+Graphics2D.drawString Test is distributed under Apache License 2.0. For license terms, see LICENSE.
 
-Graphics2D.drawString-test is written by David E. Veliev.
+Graphics2D.drawString Test is written by David E. Veliev.
