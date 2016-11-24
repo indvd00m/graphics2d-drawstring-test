@@ -3,6 +3,11 @@ language: java
 os:
   - osx
 
+osx_image:
+  - xcode6.4
+  - xcode7.3
+  - xcode8.2
+
 matrix:
   include:
   - os: linux
