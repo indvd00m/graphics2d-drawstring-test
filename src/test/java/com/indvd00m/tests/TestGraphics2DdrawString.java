@@ -53,14 +53,14 @@ public class TestGraphics2DdrawString {
 
 		String expected = "";
 		expected += "                                                            \n";
-		expected += "                          █                                 \n";
-		expected += " ███                      █      █████                      \n";
-		expected += " █  █                     █        █               █        \n";
-		expected += " █  █ ████   ██  █  █   ███  ██    █    ██  █  █  ████      \n";
-		expected += " ███  █     █  █ █  █  █  █ █  █   █   █  █  ██    █        \n";
-		expected += " █     ███  ████ █  █  █  █ █  █   █   ████  ██    █        \n";
-		expected += " █       █  █    █  █  █  █ █  █   █   █     ██    █        \n";
-		expected += " █    ████   ███ ████   ███  ██    █    ███ █  █   ███      \n";
+		expected += "                         █                                  \n";
+		expected += " ███                     █     █████                        \n";
+		expected += " █  █                    █       █              █           \n";
+		expected += " █  █ ████  ██  █  █   ███  ██   █    ██  █  █ ████         \n";
+		expected += " ███  █    █  █ █  █  █  █ █  █  █   █  █  ██   █           \n";
+		expected += " █     ███ ████ █  █  █  █ █  █  █   ████  ██   █           \n";
+		expected += " █       █ █    █  █  █  █ █  █  █   █     ██   █           \n";
+		expected += " █    ████  ███ ████   ███  ██   █    ███ █  █  ███         \n";
 		expected += "                                                            ";
 		System.out.println("Expected: ");
 		System.out.println(expected);
