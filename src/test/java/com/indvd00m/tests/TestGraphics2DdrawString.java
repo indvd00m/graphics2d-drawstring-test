@@ -24,12 +24,154 @@ import org.junit.Test;
 public class TestGraphics2DdrawString {
 
 	@Test
-	public void testWithoutAntialiasing() {
+	public void test01() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "                         █                                                      \n";
+		expected += " ███                     █     █████                                            \n";
+		expected += " █  █                    █       █              █                               \n";
+		expected += " █  █ ████  ██  █  █   ███  ██   █    ██  █  █ ████                             \n";
+		expected += " ███  █    █  █ █  █  █  █ █  █  █   █  █  ██   █                               \n";
+		expected += " █     ███ ████ █  █  █  █ █  █  █   ████  ██   █                               \n";
+		expected += " █       █ █    █  █  █  █ █  █  █   █     ██   █                               \n";
+		expected += " █    ████  ███ ████   ███  ██   █    ███ █  █  ███                             \n";
+		expected += "                                                                                ";
+
+		String result = drawText(80, "PseudoText");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void test02() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "                                                                                \n";
+		expected += "  ██  ███    ███ ███   ████ ████   ███ █  █ ███    ███ █  █  █    █  █ █  █     \n";
+		expected += "  ██  █  █  █    █  █  █    █     █    █  █  █       █ █ █   █    ████ ██ █     \n";
+		expected += "  ██  █  █  █    █  █  █    █     █    █  █  █       █ ██    █    ████ ██ █     \n";
+		expected += " █  █ ███   █    █  █  ████ ████  █ ██ ████  █       █ ██    █    ████ █ ██     \n";
+		expected += " █  █ █  █  █    █  █  █    █     █  █ █  █  █       █ █ █   █    ████ █ ██     \n";
+		expected += " ████ █  █  █    █  █  █    █     █  █ █  █  █       █ █ █   █    █  █ █ ██     \n";
+		expected += " █  █ ████   ███ ███   ████ █      ███ █  █ ███   ████ █  █  ████ █  █ █  █     \n";
+		expected += "                                                                                ";
+
+		String result = drawText(80, "ABCDEFGHIJKLMN");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void test03() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "                                                                       █        \n";
+		expected += "  ██  ███    ██  ███    ██ █████  █  █ █  ██   █  █  ██   █  ████      █        \n";
+		expected += " █  █ █  █  █  █ █  █  █  █  █    █  █ █  ██   █  █  █ █ █      █      █        \n";
+		expected += " █  █ █  █  █  █ █  █  █     █    █  █  ██ █ █ █   ██  █ █     █  ███  ███      \n";
+		expected += " █  █ ███   █  █ ███    ███  █    █  █  ██ ██ ██   ██   █      █     █ █  █     \n";
+		expected += " █  █ █     █  █ █ ██     █  █    █  █  ██  █ █    ██   █     █   ████ █  █     \n";
+		expected += " █  █ █     █  █ █  █  █  █  █    █  █  ██  █ █   █  █  █    █    █  █ █  █     \n";
+		expected += "  ██  █      ██  █   █  ██   █     ██   ██  █ █   █  █  █    ████ ████ ███      \n";
+		expected += "               █                                                                ";
+
+		String result = drawText(80, "OPQRSTUVWXYZab");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void test04() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "         █         ██       █      █     █  █    ███                            \n";
+		expected += "         █        █         █               █      █                            \n";
+		expected += "         █        █         █               █      █                            \n";
+		expected += "  ███  ███   ██  ████   ███ ████  ██    ██  █  █   █   █████ ████  ██  ███      \n";
+		expected += " █    █  █  █  █  █    █  █ █  █   █     █  █ █    █   █ █ █ █  █ █  █ █  █     \n";
+		expected += " █    █  █  ████  █    █  █ █  █   █     █  ██     █   █ █ █ █  █ █  █ █  █     \n";
+		expected += " █    █  █  █     █    █  █ █  █   █     █  █ █    █   █ █ █ █  █ █  █ █  █     \n";
+		expected += "  ███  ███   ███  █     ███ █  █ █████   █  █  █    ██ █ █ █ █  █  ██  ███      \n";
+		expected += "                          █              █                             █        ";
+
+		String result = drawText(80, "cdefghijklmnop");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void test05() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "                                                                                \n";
+		expected += "                                                        ██    ██   ██    █      \n";
+		expected += "                  █                                      █   █  █ █  █   █      \n";
+		expected += "  ███  ███  ████ ████  █  █ █  █ █   █ █  █ █  █  ████   █      █    █  ██      \n";
+		expected += " █  █  █    █     █    █  █ █  █ █ █ █  ██  █  █    █    █     ██  ██   ██      \n";
+		expected += " █  █  █     ███  █    █  █  ██   █ █   ██   ██    ██    █    ██     █ █ █      \n";
+		expected += " █  █  █       █  █    █  █  ██   █ █   ██   ██    █     █   ██      █ ████     \n";
+		expected += "  ███  █    ████  ███  ████  ██   █ █  █  █  █    ████  ███  ████ ███    █      \n";
+		expected += "    █                                        █                                  ";
+
+		String result = drawText(80, "qrstuvwxyz1234");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	@Test
+	public void test06() {
+		String expected = "";
+		expected += "                                                                                \n";
+		expected += "                                                                                \n";
+		expected += " ████  ███  ████  ██    ██   ██    █         ██     █ ███     █    ████ █ █     \n";
+		expected += " █    ██       █ █  █  █  █ █  █   █    ██  █ █    ████ █   ██ █   █   ███      \n";
+		expected += " █    █       █  █  █  █  █ █  █   █   █  ██████  █ █ ███ █        █   ███      \n";
+		expected += " ███  ████    █   ██   ████ █ ██   █   █ ██ █ █   ███   ██         ██ █ █ █     \n";
+		expected += "    █ █  █    █  █  █     █ █  █   █   █ ███████    ███████       █ ██          \n";
+		expected += "    █ █  █   ██  █  █    ██ █  █       █ ██ ██      █ █ █ █       █ █           \n";
+		expected += " ███   ██    █    ██   ███   ██    █   ██  █ █    ████  ███        ███          \n";
+		expected += "                                        ██          █                           ";
+
+		String result = drawText(80, "567890!@#$%^&*");
+
+		System.out.println("Expected: ");
+		System.out.println(expected);
+		System.out.println("Actual:");
+		System.out.println(result);
+
+		assertEquals(expected, result);
+	}
+
+	String drawText(int width, String text) {
 		int x = 0;
 		int y = 9;
-		int width = 60;
 		int height = 10;
-		float fontSizeInPixels = 8.590604f;
+		float fontSizeInPixels = 9f;
 
 		BufferedImage image = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
 		Graphics2D graphics = image.createGraphics();
@@ -45,28 +187,12 @@ public class TestGraphics2DdrawString {
 		graphics.setColor(backgroundColor);
 		graphics.fillRect(0, 0, width, height);
 		graphics.setColor(fontColor);
-		graphics.drawString("PseudoText", x, y);
+		graphics.drawString(text, x, y);
 
-		writeImageToPNG(image, "/tmp/test.png");
+		// writeImageToPNG(image, "/tmp/test.png");
 
 		String result = imageToString(image, backgroundColor);
-
-		String expected = "";
-		expected += "                                                            \n";
-		expected += "                         █                                  \n";
-		expected += " ███                     █     █████                        \n";
-		expected += " █  █                    █       █              █           \n";
-		expected += " █  █ ████  ██  █  █   ███  ██   █    ██  █  █ ████         \n";
-		expected += " ███  █    █  █ █  █  █  █ █  █  █   █  █  ██   █           \n";
-		expected += " █     ███ ████ █  █  █  █ █  █  █   ████  ██   █           \n";
-		expected += " █       █ █    █  █  █  █ █  █  █   █     ██   █           \n";
-		expected += " █    ████  ███ ████   ███  ██   █    ███ █  █  ███         \n";
-		expected += "                                                            ";
-		System.out.println("Expected: ");
-		System.out.println(expected);
-		System.out.println("Actual:");
-		System.out.println(result);
-		assertEquals(expected, result);
+		return result;
 	}
 
 	String imageToString(BufferedImage image, Color backgroundColor) {
