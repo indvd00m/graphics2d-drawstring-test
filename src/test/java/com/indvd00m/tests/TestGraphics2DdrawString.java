@@ -27,14 +27,14 @@ public class TestGraphics2DdrawString {
 	public void test01() {
 		String expected = "";
 		expected += "                                                                                \n";
-		expected += "                         █                                                      \n";
-		expected += " ███                     █     █████                                            \n";
-		expected += " █  █                    █       █              █                               \n";
-		expected += " █  █ ████  ██  █  █   ███  ██   █    ██  █  █ ████                             \n";
-		expected += " ███  █    █  █ █  █  █  █ █  █  █   █  █  ██   █                               \n";
-		expected += " █     ███ ████ █  █  █  █ █  █  █   ████  ██   █                               \n";
-		expected += " █       █ █    █  █  █  █ █  █  █   █     ██   █                               \n";
-		expected += " █    ████  ███ ████   ███  ██   █    ███ █  █  ███                             \n";
+		expected += "                          █                                                     \n";
+		expected += " ███                      █      █████                                          \n";
+		expected += " █  █                     █        █               █                            \n";
+		expected += " █  █ ████   ██  █  █   ███  ██    █    ██  █  █  ████                          \n";
+		expected += " ███  █     █  █ █  █  █  █ █  █   █   █  █  ██    █                            \n";
+		expected += " █     ███  ████ █  █  █  █ █  █   █   ████  ██    █                            \n";
+		expected += " █       █  █    █  █  █  █ █  █   █   █     ██    █                            \n";
+		expected += " █    ████   ███ ████   ███  ██    █    ███ █  █   ███                          \n";
 		expected += "                                                                                ";
 
 		String result = drawText(80, "PseudoText");
