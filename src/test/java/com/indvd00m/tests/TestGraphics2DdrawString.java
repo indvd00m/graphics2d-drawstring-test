@@ -27,14 +27,14 @@ public class TestGraphics2DdrawString {
 	public void test01() {
 		String expected = "";
 		expected += "                                                                                \n";
-		expected += "                          █                                                     \n";
-		expected += " ███                      █      █████                                          \n";
-		expected += " █  █                     █        █               █                            \n";
-		expected += " █  █ ████   ██  █  █   ███  ██    █    ██  █  █  ████                          \n";
-		expected += " ███  █     █  █ █  █  █  █ █  █   █   █  █  ██    █                            \n";
-		expected += " █     ███  ████ █  █  █  █ █  █   █   ████  ██    █                            \n";
-		expected += " █       █  █    █  █  █  █ █  █   █   █     ██    █                            \n";
-		expected += " █    ████   ███ ████   ███  ██    █    ███ █  █   ███                          \n";
+		expected += "                                                                                \n";
+		expected += " ██                       █      █████                                          \n";
+		expected += " █ ██                     █        █               █                            \n";
+		expected += " █  █ ███   ███  █  █  ████ ███    █   ███  █  █  ████                          \n";
+		expected += " █ ██ █     █  █ █  █  █  █ █  █   █   █  █ █ █    █                            \n";
+		expected += " ██    ██   ████ █  █  █  █ █  █   █   ████  █     █                            \n";
+		expected += " █       █  █    █  █  █  █ █  █   █   █    █ █    █                            \n";
+		expected += " █    ███   ████ ████  ████ ███    █   ████ █  █   ███                          \n";
 		expected += "                                                                                ";
 
 		String result = drawText(80, "PseudoText");
@@ -52,13 +52,13 @@ public class TestGraphics2DdrawString {
 		String expected = "";
 		expected += "                                                                                \n";
 		expected += "                                                                                \n";
-		expected += "  ██  ███    ███ ███   ████ ████   ███ █  █ ███    ███ █  █  █    █  █ █  █     \n";
-		expected += "  ██  █  █  █    █  █  █    █     █    █  █  █       █ █ █   █    ████ ██ █     \n";
-		expected += "  ██  █  █  █    █  █  █    █     █    █  █  █       █ ██    █    ████ ██ █     \n";
-		expected += " █  █ ███   █    █  █  ████ ████  █ ██ ████  █       █ ██    █    ████ █ ██     \n";
-		expected += " █  █ █  █  █    █  █  █    █     █  █ █  █  █       █ █ █   █    ████ █ ██     \n";
-		expected += " ████ █  █  █    █  █  █    █     █  █ █  █  █       █ █ █   █    █  █ █ ██     \n";
-		expected += " █  █ ████   ███ ███   ████ █      ███ █  █ ███   ████ █  █  ████ █  █ █  █     \n";
+		expected += "  █   ██     ██  ██    ████ ████   ██  █  █ ████   ██  █  █  █   ██  █ █  █     \n";
+		expected += "  ██  █ ██  █    █ █   █    █     █  █ █  █  █      █  █ █   █   ██ ██ █  █     \n";
+		expected += " █ █  █  █  █    █  █  █    █    █     █  █  █      █  ██    █   ██ ██ ██ █     \n";
+		expected += " █ █  ███   █    █  █  ████ ████ █     ████  █      █  ██    █   █ █ █ ██ █     \n";
+		expected += " █ █  █  █  █    █  █  █    █    █   █ █  █  █      █  █ █   █   █ █ █ ██ █     \n";
+		expected += " ██ █ █  █  █    █  █  █    █     █  █ █  █  █      █  █ █   █   █   █ █ ██     \n";
+		expected += "█   █ ███    ███ ███   ████ █     ████ █  █ ████ ████  █  █  █████   █ █ ██     \n";
 		expected += "                                                                                ";
 
 		String result = drawText(80, "ABCDEFGHIJKLMN");
@@ -75,15 +75,15 @@ public class TestGraphics2DdrawString {
 	public void test03() {
 		String expected = "";
 		expected += "                                                                                \n";
-		expected += "                                                                       █        \n";
-		expected += "  ██  ███    ██  ███    ██ █████  █  █ █  ██   █  █  ██   █  ████      █        \n";
-		expected += " █  █ █  █  █  █ █  █  █  █  █    █  █ █  ██   █  █  █ █ █      █      █        \n";
-		expected += " █  █ █  █  █  █ █  █  █     █    █  █  ██ █ █ █   ██  █ █     █  ███  ███      \n";
-		expected += " █  █ ███   █  █ ███    ███  █    █  █  ██ ██ ██   ██   █      █     █ █  █     \n";
-		expected += " █  █ █     █  █ █ ██     █  █    █  █  ██  █ █    ██   █     █   ████ █  █     \n";
-		expected += " █  █ █     █  █ █  █  █  █  █    █  █  ██  █ █   █  █  █    █    █  █ █  █     \n";
-		expected += "  ██  █      ██  █   █  ██   █     ██   ██  █ █   █  █  █    ████ ████ ███      \n";
-		expected += "               █                                                                ";
+		expected += "                                                                                \n";
+		expected += "  ██  ██     ██  ██     ██ █████  █  ██   ██     █   ██   █  ████      █        \n";
+		expected += " █  █ █ ██  █  █ █ ██  █     █    █  ██   ██   █  █  █ █  █     █      █        \n";
+		expected += " █  █ █  █  █  █ █  █  █     █    █  █ █  ██ █ █   ██  █ █     █  ███  ███      \n";
+		expected += " █  █ █ ██  █  █ ███   ███   █    █  █ █ █ █ █ █   █    █     █      █ █  █     \n";
+		expected += " █  █ ██    █  █ █ █      █  █    █  █ █ █ ██ ██   ██   █     █   ████ █  █     \n";
+		expected += " █  █ █     █  █ █  █     █  █    █  █  ██ ██ ██  █ █   █    █    █  █ █  █     \n";
+		expected += " ███  █     ███  █  █  ███   █    ███   █   █ ██ █   █  █    ████ ████ ███      \n";
+		expected += "              █                                                                 ";
 
 		String result = drawText(80, "OPQRSTUVWXYZab");
 
@@ -99,15 +99,15 @@ public class TestGraphics2DdrawString {
 	public void test04() {
 		String expected = "";
 		expected += "                                                                                \n";
-		expected += "         █         ██       █      █     █  █    ███                            \n";
+		expected += "                                                                                \n";
+		expected += "         █         ██       █      █        █     ██                            \n";
 		expected += "         █        █         █               █      █                            \n";
-		expected += "         █        █         █               █      █                            \n";
-		expected += "  ███  ███   ██  ████   ███ ████  ██    ██  █  █   █   █████ ████  ██  ███      \n";
-		expected += " █    █  █  █  █  █    █  █ █  █   █     █  █ █    █   █ █ █ █  █ █  █ █  █     \n";
-		expected += " █    █  █  ████  █    █  █ █  █   █     █  ██     █   █ █ █ █  █ █  █ █  █     \n";
-		expected += " █    █  █  █     █    █  █ █  █   █     █  █ █    █   █ █ █ █  █ █  █ █  █     \n";
-		expected += "  ███  ███   ███  █     ███ █  █ █████   █  █  █    ██ █ █ █ █  █  ██  ███      \n";
-		expected += "                          █              █                             █        ";
+		expected += "  ███ ████  ███  ████  ████ ███   ██   ██   █  █   █  █████  ███  ███  ███      \n";
+		expected += " █    █  █  █  █  █    █  █ █  █   █    █   █ █    █  █ █ █  █  █ █  █ █  █     \n";
+		expected += " █    █  █  ████  █    █  █ █  █   █    █   ██     █  █ █ █  █  █ █  █ █  █     \n";
+		expected += " █    █  █  █     █    █  █ █  █   █    █   █ █    █  █ █ █  █  █ █  █ █  █     \n";
+		expected += "  ███ ████  ████  █    ████ █  █  ████  █   █  █   ████ █ █  █  █ ███  ███      \n";
+		expected += "                         █              █                              █        ";
 
 		String result = drawText(80, "cdefghijklmnop");
 
@@ -124,13 +124,13 @@ public class TestGraphics2DdrawString {
 		String expected = "";
 		expected += "                                                                                \n";
 		expected += "                                                                                \n";
-		expected += "                                                        ██    ██   ██    █      \n";
-		expected += "                  █                                      █   █  █ █  █   █      \n";
-		expected += "  ███  ███  ████ ████  █  █ █  █ █   █ █  █ █  █  ████   █      █    █  ██      \n";
-		expected += " █  █  █    █     █    █  █ █  █ █ █ █  ██  █  █    █    █     ██  ██   ██      \n";
-		expected += " █  █  █     ███  █    █  █  ██   █ █   ██   ██    ██    █    ██     █ █ █      \n";
-		expected += " █  █  █       █  █    █  █  ██   █ █   ██   ██    █     █   ██      █ ████     \n";
-		expected += "  ███  █    ████  ███  ████  ██   █ █  █  █  █    ████  ███  ████ ███    █      \n";
+		expected += "                                                        █    ██   ███    █      \n";
+		expected += "                  █                                     █      █     █  ██      \n";
+		expected += " ████   ██  ███  ████  █  █    █ █     █  █    █  ████  █       █    █ █ █      \n";
+		expected += " █  █  █    █     █    █  █ █ █  █   █ █ █  █  █    █   █      █   ██  █ █      \n";
+		expected += " █  █  █     ██   █    █  █ █ █  █ █ █  █   █ █    █    █     █     ███  █      \n";
+		expected += " █  █  █       █  █    █  █ █ █   █ ██ █ █   ██   █     █    █       █ ███      \n";
+		expected += " ████  █    ███   ███  ████  █    █ █  █  █  █    ████ ████  ████ ███    █      \n";
 		expected += "    █                                        █                                  ";
 
 		String result = drawText(80, "qrstuvwxyz1234");
@@ -148,14 +148,14 @@ public class TestGraphics2DdrawString {
 		String expected = "";
 		expected += "                                                                                \n";
 		expected += "                                                                                \n";
-		expected += " ████  ███  ████  ██    ██   ██    █         ██     █ ███     █    ████ █ █     \n";
-		expected += " █    ██       █ █  █  █  █ █  █   █    ██  █ █    ████ █   ██ █   █   ███      \n";
-		expected += " █    █       █  █  █  █  █ █  █   █   █  ██████  █ █ ███ █        █   ███      \n";
-		expected += " ███  ████    █   ██   ████ █ ██   █   █ ██ █ █   ███   ██         ██ █ █ █     \n";
-		expected += "    █ █  █    █  █  █     █ █  █   █   █ ███████    ███████       █ ██          \n";
-		expected += "    █ █  █   ██  █  █    ██ █  █       █ ██ ██      █ █ █ █       █ █           \n";
-		expected += " ███   ██    █    ██   ███   ██    █   ██  █ █    ████  ███        ███          \n";
-		expected += "                                        ██          █                           ";
+		expected += " ███   ██   ████  ██    ██   ██    █                          █    ██   █       \n";
+		expected += " █    █       █  █  █  █ █  █ █    █   ████  █ █   ██ ███    █ █  █    ██ █     \n";
+		expected += " █    █       █  █  █  █  █ █  █   █  █   █ ████  ██  █ █       █ █     ██      \n";
+		expected += " ███  ████    █   ██   █  █ ██ █   █  █ ███ █ █   ██   █ █        ██   ████     \n";
+		expected += "    █ █  █   █   █  █  ████ █  █   █  ██  █ █ █     ███████      █  ██          \n";
+		expected += "    █ █  █   █   █  █     █ █  █      █ █ █ ███    █ █  █ █      █  ██          \n";
+		expected += " ███  ███    █   ███   ███  ███    █  █  █  ██    ███    ██       ████          \n";
+		expected += "                                       ███                                      ";
 
 		String result = drawText(80, "567890!@#$%^&*");
 
@@ -221,7 +221,7 @@ public class TestGraphics2DdrawString {
 	Font getFont() {
 		InputStream is = null;
 		try {
-			is = getClass().getResourceAsStream("/fonts/DejaVuSansMono/DejaVuSansMono.ttf");
+			is = getClass().getResourceAsStream("/fonts/DejaVuSansMono/DejaVuSansMonoWithoutHints.ttf");
 			Font font = Font.createFont(Font.TRUETYPE_FONT, is);
 			return font;
 		} catch (FontFormatException e) {
