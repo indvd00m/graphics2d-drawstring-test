@@ -1,27 +1,17 @@
 language: java
 
 os:
-  - linux
   - osx
-
-jdk:
-  - openjdk6
-  - openjdk7
-  - oraclejdk7
-  - oraclejdk8
 
 matrix:
   include:
-  - os: osx
-  exclude:
-  - os: osx
+  - os: linux
     jdk: openjdk6
-  - os: osx
+  - os: linux
     jdk: openjdk7
-  - os: osx
+  - os: linux
     jdk: oraclejdk7
-  - os: osx
+  - os: linux
     jdk: oraclejdk8
-
 
 script: mvn clean test
