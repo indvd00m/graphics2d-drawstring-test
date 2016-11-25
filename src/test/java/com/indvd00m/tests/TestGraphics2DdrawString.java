@@ -21,7 +21,7 @@ import org.junit.Test;
  * @date 2016-Nov-24 5:10:09 PM
  *
  */
-public class TestGraphics2DdrawString {
+public strictfp class TestGraphics2DdrawString {
 
 	@Test
 	public void test01() {
