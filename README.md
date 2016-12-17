@@ -5,7 +5,7 @@ Test for check pixel-by-pixel identical text rendering with `Graphics2D.drawStri
 See http://stackoverflow.com/questions/40745529/graphics2d-identical-text-rendering-on-all-platforms
 
 ## Running tests
-```
+```bash
 git clone https://github.com/indvd00m/graphics2d-drawstring-test/
 cd graphics2d-drawstring-test
 mvn clean test
